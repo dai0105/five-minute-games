@@ -778,6 +778,45 @@ main {
     letter-spacing: 0.08em;
 }
 
+/* =========================
+   GAME DETAILS
+========================= */
+
+.game-details {
+    margin: 24px 0;
+
+    padding: 20px;
+
+    background-color: #fff8ef;
+    border-radius: 18px;
+}
+
+.game-detail + .game-detail {
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top: 1px solid #f0dfcf;
+}
+
+.game-detail h3 {
+    margin: 0 0 8px;
+
+    color: #e9822c;
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.game-detail p {
+    margin: 0;
+
+    color: #806b60;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
 @media (max-width: 600px) {
 
     header {
@@ -1035,5 +1074,21 @@ main {
 
     .site-footer p {
         font-size: 11px;
+    }
+
+    .game-details {
+        margin: 20px 0;
+        padding: 18px 16px;
+
+        border-radius: 16px;
+    }
+
+    .game-detail h3 {
+        font-size: 13px;
+    }
+
+    .game-detail p {
+        font-size: 12px;
+        line-height: 1.8;
     }
 }
