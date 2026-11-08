@@ -817,6 +817,95 @@ main {
     line-height: 1.8;
 }
 
+/* =========================
+   REQUEST
+========================= */
+
+.request {
+    margin-top: 32px;
+    padding: 48px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #ffe2bd;
+    border-radius: 32px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 32px
+        rgba(74, 58, 50, 0.08);
+}
+
+.request .section-label {
+    color: #e9822c;
+}
+
+.request h2 {
+    margin: 0;
+
+    color: #4a3a32;
+
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.request-lead {
+    margin: 20px 0 12px;
+
+    color: #e9822c;
+
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.request-text {
+    max-width: 620px;
+    margin: 0 auto 30px;
+
+    color: #806b60;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.9;
+}
+
+.request-text p {
+    margin: 10px 0;
+}
+
+.request-button {
+    display: inline-block;
+
+    min-width: 280px;
+    padding: 15px 28px;
+
+    background-color: #e9822c;
+    color: #ffffff;
+
+    border-radius: 999px;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 0 #c9681f;
+
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease;
+}
+
+.request-button:active {
+    transform: translateY(4px);
+
+    box-shadow:
+        0 1px 0 #c9681f;
+}
+
 @media (max-width: 600px) {
 
     header {
@@ -1090,5 +1179,33 @@ main {
     .game-detail p {
         font-size: 12px;
         line-height: 1.8;
+    }
+
+    /* 制作依頼 */
+    .request {
+        margin-top: 24px;
+        padding: 36px 24px;
+
+        border-radius: 24px;
+    }
+
+    .request h2 {
+        font-size: 25px;
+    }
+
+    .request-lead {
+        font-size: 17px;
+    }
+
+    .request-text {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .request-button {
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px 18px;
     }
 }
