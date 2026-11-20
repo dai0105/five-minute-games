@@ -243,7 +243,8 @@ main {
 }
 
 .about {
-    margin-top: 80px;
+    margin-top: 0;
+    margin-bottom: 56px;
     padding: 56px 48px;
 
     background-color: #4a3a32;
@@ -818,6 +819,99 @@ main {
 }
 
 /* =========================
+   CREATOR
+========================= */
+
+.creator {
+    margin-top: 80px;
+    padding: 56px 48px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8ef 0%,
+            #fff1dc 100%
+        );
+
+    border: 2px solid #ffe2bd;
+    border-radius: 32px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 32px
+        rgba(74, 58, 50, 0.08);
+}
+
+.creator .section-label {
+    color: #e9822c;
+}
+
+.creator h2 {
+    margin: 0;
+
+    color: #4a3a32;
+
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.creator-lead {
+    margin: 22px 0;
+
+    color: #e9822c;
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.creator-text {
+    max-width: 650px;
+    margin: 0 auto 30px;
+
+    color: #806b60;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.creator-text p {
+    margin: 12px 0;
+}
+
+.creator-button {
+    display: inline-block;
+
+    min-width: 240px;
+    padding: 15px 28px;
+
+    background-color: #4a3a32;
+    color: #ffffff;
+
+    border-radius: 999px;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 0 #2f2520;
+
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease;
+}
+
+.creator-button:active {
+    transform: translateY(4px);
+
+    box-shadow:
+        0 1px 0 #2f2520;
+}
+
+/* =========================
    REQUEST
 ========================= */
 
@@ -941,7 +1035,8 @@ main {
     }
 
     .about {
-        margin-top: 56px;
+        margin-top: 0;
+        margin-bottom: 40px;
         padding: 40px 24px;
 
         border-radius: 24px;
@@ -958,25 +1053,6 @@ main {
     .about-text {
         font-size: 15px;
         line-height: 1.9;
-    }
-
-    .site-nav {
-        width: 100%;
-        padding: 18px 16px;
-    }
-
-    .site-logo {
-        font-size: 15px;
-    }
-
-    .nav-links {
-        gap: 4px;
-    }
-
-    .nav-links a {
-        padding: 8px 9px;
-
-        font-size: 11px;
     }
 
     .development-intro > h2 {
@@ -1084,26 +1160,36 @@ main {
 
     /* ナビ */
     .site-nav {
+        flex-direction: column;
+        align-items: center;
+
         width: 100%;
         padding: 16px 12px;
-        gap: 10px;
+
+        gap: 12px;
     }
 
     .site-logo {
-        flex-shrink: 0;
+        font-size: 15px;
         white-space: nowrap;
-        font-size: 14px;
     }
 
     .nav-links {
-        gap: 2px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        gap: 6px;
     }
 
     .nav-links a {
-        padding: 7px 6px;
+        padding: 8px 10px;
+
         font-size: 10px;
         white-space: nowrap;
     }
+
 
     /* ゲーム一覧 */
     .game-list {
@@ -1203,6 +1289,34 @@ main {
     }
 
     .request-button {
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px 18px;
+    }
+
+        /* 制作者紹介 */
+    .creator {
+        margin-top: 56px;
+        padding: 40px 24px;
+
+        border-radius: 24px;
+    }
+
+    .creator h2 {
+        font-size: 26px;
+    }
+
+    .creator-lead {
+        font-size: 18px;
+    }
+
+    .creator-text {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .creator-button {
         width: 100%;
         min-width: 0;
 
